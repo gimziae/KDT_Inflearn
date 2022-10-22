@@ -1,0 +1,119 @@
+/* common */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+/* btn style*/
+.btn{
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: 1px solid #dbdbdb;
+    margin-left: 0.5rem;
+}
+
+.btn_white{
+    color: #4a4a4a;
+    background-color: #fff;
+
+}
+.btn_red{
+    color: #fff;
+    background-color: #ff7867;
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    /* font-family: 'Lobster', cursive; */
+
+/* HEADER  */
+header{
+    width: 100%;
+    height: 65px;
+    box-shadow: 1px 0 10px rgba(135,135,135,0.5);
+}
+header .inner{
+    /* border: 1px solid red; */
+    position: relative;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+/* HEADER menu-left */
+header .inner .menu-left{
+    display: flex;
+}
+header .inner .menu-left .logo{
+    margin-right: 10px;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+}
+header .inner .menu-left .logo a{
+    color: #1dc078;
+}
+header .inner .menu-left .logo a i{
+    font-size: 20px;
+}
+header .inner .menu-left .menu{
+    display: flex;
+}
+header .inner .menu-left .menu li{}
+header .inner .menu-left .menu li a{
+    color: #4a4a4a;
+    padding: 1rem;
+    text-shadow: 1px 1px 10px #4a4a4a11;
+}
+header .inner .menu-left .menu li a:hover{
+    color: #1dc078;
+}
+
+/* HEADER menu-right */
+header .inner .menu-right{
+    display: flex;
+    align-items: center;
+}
+header .inner .menu-right .header_search{
+    /* border: 1px solid red; */
+    position: relative;
+}
+header .inner .menu-right .header_search input{
+    width: 150px;
+    height: 40px;
+    border: 0.5px solid transparent;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    color: #363636;
+}
+header .inner .menu-right .header_search input:hover{
+    border-color: #dbdbdb;
+}
+header .inner .menu-right .header_search input:focus{
+    /* focus 시 컬러 변경은 border X outline O */
+    outline-color: #1dc078;
+}
+header .inner .menu-right .header_search i{
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    /* 높이값 미지정 시 세로축 가운데 정렬 */
+    top: 50%;
+    transform: translateY(-50%);
+}
